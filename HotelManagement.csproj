@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Le_tan_main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Le_tan_main_form.Designer.cs">
+      <DependentUpon>Le_tan_main_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,15 @@
     <Compile Include="ThongTinPhong.Designer.cs">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_special_orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_special_orders.Designer.cs">
+      <DependentUpon>uc_special_orders.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Le_tan_main_form.resx">
+      <DependentUpon>Le_tan_main_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinPhong.resx">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_special_orders.resx">
+      <DependentUpon>uc_special_orders.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
