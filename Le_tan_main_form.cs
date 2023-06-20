@@ -18,7 +18,7 @@ namespace HotelManagement
         }
         private void Le_tan_main_form_Load(object sender, EventArgs e)
         {
-            panelContainer.Controls.Clear();
+            
         }
 
         private void addUserControl(UserControl UC)
@@ -28,10 +28,23 @@ namespace HotelManagement
             panelContainer.Controls.Add(UC);
             UC.BringToFront();
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void bt_YeuCauDacBiet_Click(object sender, EventArgs e)
         {
             uc_special_orders uc = new uc_special_orders();
             addUserControl(uc);
+        }
+
+        private void bt_LapPhieuDatPhong_Click(object sender, EventArgs e)
+        {
+            UC_PhieuDatPhong uc = new UC_PhieuDatPhong();
+            addUserControl(uc);
+        }
+
+        private void bt_ThongTinPhong_Click(object sender, EventArgs e)
+        {
+            uc_ThongTinDatPhong uc = new uc_ThongTinDatPhong();
+            addUserControl((uc));
         }
     }
 }

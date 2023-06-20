@@ -78,11 +78,23 @@
     <Compile Include="ThongTinPhong.Designer.cs">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_PhieuDatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PhieuDatPhong.Designer.cs">
+      <DependentUpon>UC_PhieuDatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="uc_special_orders.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="uc_special_orders.Designer.cs">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ThongTinDatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_ThongTinDatPhong.Designer.cs">
+      <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Le_tan_main_form.resx">
       <DependentUpon>Le_tan_main_form.cs</DependentUpon>
@@ -109,8 +121,14 @@
     <EmbeddedResource Include="ThongTinPhong.resx">
       <DependentUpon>ThongTinPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_PhieuDatPhong.resx">
+      <DependentUpon>UC_PhieuDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uc_special_orders.resx">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_ThongTinDatPhong.resx">
+      <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
