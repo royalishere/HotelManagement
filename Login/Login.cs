@@ -30,7 +30,7 @@ namespace HotelManagement
 
         private void open_starterform()
         {
-            Application.Run(new PhieuDatPhong());
+            Application.Run(new Le_tan_main_form());
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

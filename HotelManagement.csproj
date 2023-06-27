@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ke_toan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ke_toan.Designer.cs">
+      <DependentUpon>Ke_toan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Le_tan_main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,12 +64,6 @@
     <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuDatPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuDatPhong.Designer.cs">
-      <DependentUpon>PhieuDatPhong.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Login\Quen_MK.cs">
@@ -72,11 +72,17 @@
     <Compile Include="Login\Quen_MK.Designer.cs">
       <DependentUpon>Quen_MK.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinPhong.cs">
-      <SubType>Form</SubType>
+    <Compile Include="UC_DangKyDichVu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ThongTinPhong.Designer.cs">
-      <DependentUpon>ThongTinPhong.cs</DependentUpon>
+    <Compile Include="UC_DangKyDichVu.Designer.cs">
+      <DependentUpon>UC_DangKyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DangKyTour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DangKyTour.Designer.cs">
+      <DependentUpon>UC_DangKyTour.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_PhieuDatPhong.cs">
       <SubType>UserControl</SubType>
@@ -96,14 +102,14 @@
     <Compile Include="uc_ThongTinDatPhong.Designer.cs">
       <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ke_toan.resx">
+      <DependentUpon>Ke_toan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Le_tan_main_form.resx">
       <DependentUpon>Le_tan_main_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhieuDatPhong.resx">
-      <DependentUpon>PhieuDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,8 +124,11 @@
     <EmbeddedResource Include="Login\Quen_MK.resx">
       <DependentUpon>Quen_MK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinPhong.resx">
-      <DependentUpon>ThongTinPhong.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DangKyDichVu.resx">
+      <DependentUpon>UC_DangKyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DangKyTour.resx">
+      <DependentUpon>UC_DangKyTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_PhieuDatPhong.resx">
       <DependentUpon>UC_PhieuDatPhong.cs</DependentUpon>
@@ -145,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\hotel_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

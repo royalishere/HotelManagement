@@ -46,5 +46,17 @@ namespace HotelManagement
             uc_ThongTinDatPhong uc = new uc_ThongTinDatPhong();
             addUserControl((uc));
         }
+
+        private void bt_dangkydv_Click(object sender, EventArgs e)
+        {
+            UC_DangKyDichVu uc = new UC_DangKyDichVu();
+            addUserControl((uc));
+        }
+
+        private void bt_dangkytour_Click(object sender, EventArgs e)
+        {
+            UC_DangKyTour uc = new UC_DangKyTour();
+            addUserControl((uc));
+        }
     }
 }

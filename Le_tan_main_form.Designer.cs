@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Le_tan_main_form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_dangkytour = new System.Windows.Forms.Button();
+            this.bt_dangkydv = new System.Windows.Forms.Button();
             this.bt_ThongTinPhong = new System.Windows.Forms.Button();
             this.bt_LapPhieuDatPhong = new System.Windows.Forms.Button();
             this.bt_YeuCauDacBiet = new System.Windows.Forms.Button();
@@ -42,6 +44,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.Controls.Add(this.bt_dangkytour);
+            this.panel1.Controls.Add(this.bt_dangkydv);
             this.panel1.Controls.Add(this.bt_ThongTinPhong);
             this.panel1.Controls.Add(this.bt_LapPhieuDatPhong);
             this.panel1.Controls.Add(this.bt_YeuCauDacBiet);
@@ -51,6 +55,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(213, 653);
             this.panel1.TabIndex = 0;
+            // 
+            // bt_dangkytour
+            // 
+            this.bt_dangkytour.BackColor = System.Drawing.Color.Lime;
+            this.bt_dangkytour.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_dangkytour.Location = new System.Drawing.Point(0, 510);
+            this.bt_dangkytour.Name = "bt_dangkytour";
+            this.bt_dangkytour.Size = new System.Drawing.Size(213, 59);
+            this.bt_dangkytour.TabIndex = 5;
+            this.bt_dangkytour.Text = "Đăng ký tour";
+            this.bt_dangkytour.UseVisualStyleBackColor = false;
+            this.bt_dangkytour.Click += new System.EventHandler(this.bt_dangkytour_Click);
+            // 
+            // bt_dangkydv
+            // 
+            this.bt_dangkydv.BackColor = System.Drawing.Color.Lime;
+            this.bt_dangkydv.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_dangkydv.Location = new System.Drawing.Point(0, 445);
+            this.bt_dangkydv.Name = "bt_dangkydv";
+            this.bt_dangkydv.Size = new System.Drawing.Size(213, 59);
+            this.bt_dangkydv.TabIndex = 4;
+            this.bt_dangkydv.Text = "Đăng ký dịch vụ";
+            this.bt_dangkydv.UseVisualStyleBackColor = false;
+            this.bt_dangkydv.Click += new System.EventHandler(this.bt_dangkydv_Click);
             // 
             // bt_ThongTinPhong
             // 
@@ -102,16 +130,16 @@
             // panelContainer
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelContainer.Location = new System.Drawing.Point(219, 0);
+            this.panelContainer.Location = new System.Drawing.Point(210, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1413, 653);
+            this.panelContainer.Size = new System.Drawing.Size(1441, 653);
             this.panelContainer.TabIndex = 2;
             // 
             // Le_tan_main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1632, 653);
+            this.ClientSize = new System.Drawing.Size(1651, 653);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.Name = "Le_tan_main_form";
@@ -131,5 +159,7 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Button bt_LapPhieuDatPhong;
         private System.Windows.Forms.Button bt_ThongTinPhong;
+        private System.Windows.Forms.Button bt_dangkytour;
+        private System.Windows.Forms.Button bt_dangkydv;
     }
 }
