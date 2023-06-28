@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class UC_DangKyDichVu : UserControl
+    public partial class UC_ThanhToan : UserControl
     {
-        public UC_DangKyDichVu()
+        public UC_ThanhToan()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

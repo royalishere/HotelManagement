@@ -96,6 +96,12 @@
     <Compile Include="uc_special_orders.Designer.cs">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_ThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThanhToan.Designer.cs">
+      <DependentUpon>UC_ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="uc_ThongTinDatPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_special_orders.resx">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThanhToan.resx">
+      <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uc_ThongTinDatPhong.resx">
       <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>

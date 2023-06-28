@@ -37,6 +37,7 @@
             this.bt_YeuCauDacBiet = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.bt_thanhtoan = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.Controls.Add(this.bt_thanhtoan);
             this.panel1.Controls.Add(this.bt_dangkytour);
             this.panel1.Controls.Add(this.bt_dangkydv);
             this.panel1.Controls.Add(this.bt_ThongTinPhong);
@@ -135,6 +137,18 @@
             this.panelContainer.Size = new System.Drawing.Size(1441, 653);
             this.panelContainer.TabIndex = 2;
             // 
+            // bt_thanhtoan
+            // 
+            this.bt_thanhtoan.BackColor = System.Drawing.Color.Lime;
+            this.bt_thanhtoan.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_thanhtoan.Location = new System.Drawing.Point(0, 575);
+            this.bt_thanhtoan.Name = "bt_thanhtoan";
+            this.bt_thanhtoan.Size = new System.Drawing.Size(213, 59);
+            this.bt_thanhtoan.TabIndex = 6;
+            this.bt_thanhtoan.Text = "Thanh toán";
+            this.bt_thanhtoan.UseVisualStyleBackColor = false;
+            this.bt_thanhtoan.Click += new System.EventHandler(this.bt_thanhtoan_Click);
+            // 
             // Le_tan_main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,5 +175,6 @@
         private System.Windows.Forms.Button bt_ThongTinPhong;
         private System.Windows.Forms.Button bt_dangkytour;
         private System.Windows.Forms.Button bt_dangkydv;
+        private System.Windows.Forms.Button bt_thanhtoan;
     }
 }

@@ -58,5 +58,11 @@ namespace HotelManagement
             UC_DangKyTour uc = new UC_DangKyTour();
             addUserControl((uc));
         }
+
+        private void bt_thanhtoan_Click(object sender, EventArgs e)
+        {
+            UC_ThanhToan uc = new UC_ThanhToan();
+            addUserControl((uc));
+        }
     }
 }
