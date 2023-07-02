@@ -180,11 +180,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(225, 367);
+            this.label7.Location = new System.Drawing.Point(135, 367);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 20);
+            this.label7.Size = new System.Drawing.Size(226, 20);
             this.label7.TabIndex = 59;
-            this.label7.Text = "Phiếu đặt phòng";
+            this.label7.Text = "Liên phiếu sử dụng dịch vụ\\";
             // 
             // textBox5
             // 

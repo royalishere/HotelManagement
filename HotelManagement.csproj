@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB Access Layer\DichVu_DB.cs" />
+    <Compile Include="DB Access Layer\HoaDon_DB.cs" />
+    <Compile Include="DB Access Layer\KhachHang_DB.cs" />
+    <Compile Include="DB Access Layer\KhachHang_tour_DB.cs" />
+    <Compile Include="DB Access Layer\LienPhieuSuDungDichVu_DB.cs" />
+    <Compile Include="DB Access Layer\PhieuDatPhong_DB.cs" />
+    <Compile Include="DB Access Layer\Phong_DB.cs" />
+    <Compile Include="DB Access Layer\Tour_DB.cs" />
     <Compile Include="Ke_toan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +116,9 @@
     <Compile Include="uc_ThongTinDatPhong.Designer.cs">
       <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UseCase Layer\HoaDon.cs" />
+    <Compile Include="UseCase Layer\LienPhieuSuDungDichVu.cs" />
+    <Compile Include="UseCase Layer\PhieuDatPhong.cs" />
     <EmbeddedResource Include="Ke_toan.resx">
       <DependentUpon>Ke_toan.cs</DependentUpon>
     </EmbeddedResource>
