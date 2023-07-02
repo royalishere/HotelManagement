@@ -27,5 +27,28 @@ namespace HotelManagement.DB_Access_Layer
             dap.Fill(table);
             return table;
         }
+
+        public static int LayGia(SqlConnection conn, int MaDV)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter();
+            dap.SelectCommand = new SqlCommand();
+
+            //query truy vấn
+            string sql = "select Gia from TourDuLich where MaTour = " + MaDV;
+
+            //Kết nối cơ sở dữ liệu
+            dap.SelectCommand.Connection = conn;
+            dap.SelectCommand.CommandText = sql;
+
+            DataTable table = new DataTable();
+            dap.Fill(table);
+
+            if (table.Rows.Count == 0)
+            {
+                return -1;
+            }
+
+            return table.Rows[0].Field<int>(0);
+        }
     }
 }
