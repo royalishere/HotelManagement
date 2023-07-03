@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,11 +43,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOAIPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TINHTRANG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MOTACHUNG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -153,22 +148,17 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MAPHONG,
-            this.LOAIPHONG,
-            this.TINHTRANG,
-            this.MOTACHUNG,
-            this.GIAPHONG});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
@@ -200,36 +190,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(149, 21);
             this.comboBox1.TabIndex = 26;
-            // 
-            // MAPHONG
-            // 
-            this.MAPHONG.HeaderText = "MAPHONG";
-            this.MAPHONG.MinimumWidth = 6;
-            this.MAPHONG.Name = "MAPHONG";
-            // 
-            // LOAIPHONG
-            // 
-            this.LOAIPHONG.HeaderText = "LOAIPHONG";
-            this.LOAIPHONG.MinimumWidth = 6;
-            this.LOAIPHONG.Name = "LOAIPHONG";
-            // 
-            // TINHTRANG
-            // 
-            this.TINHTRANG.HeaderText = "TINHTRANG";
-            this.TINHTRANG.MinimumWidth = 6;
-            this.TINHTRANG.Name = "TINHTRANG";
-            // 
-            // MOTACHUNG
-            // 
-            this.MOTACHUNG.HeaderText = "MOTACHUNG";
-            this.MOTACHUNG.MinimumWidth = 6;
-            this.MOTACHUNG.Name = "MOTACHUNG";
-            // 
-            // GIAPHONG
-            // 
-            this.GIAPHONG.HeaderText = "GIAPHONG";
-            this.GIAPHONG.MinimumWidth = 6;
-            this.GIAPHONG.Name = "GIAPHONG";
             // 
             // uc_ThongTinPhong
             // 
@@ -275,10 +235,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOAIPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TINHTRANG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MOTACHUNG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GIAPHONG;
     }
 }

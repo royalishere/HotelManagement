@@ -1,6 +1,5 @@
 ﻿using HotelManagement.Business_Layer;
 using HotelManagement.DB_Access_Layer;
-using HotelManagement.UseCase_Layer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

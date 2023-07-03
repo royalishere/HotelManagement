@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelManagement.Bussiness_Layer
+namespace HotelManagement.Business_Layer
 {
     internal class LienPhieuSuDungDichVu
     {

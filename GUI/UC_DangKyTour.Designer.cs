@@ -62,6 +62,8 @@
             // 
             // dgv_dsTour
             // 
+            this.dgv_dsTour.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_dsTour.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_dsTour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_dsTour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_dsTour.Location = new System.Drawing.Point(0, 0);

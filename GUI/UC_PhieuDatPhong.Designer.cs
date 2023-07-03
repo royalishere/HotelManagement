@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,12 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.phieudatphong_dg = new System.Windows.Forms.DataGridView();
-            this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYDEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SODEMLUUTRU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.YEUCAUDACBIET = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -238,73 +232,32 @@
             // phieudatphong_dg
             // 
             this.phieudatphong_dg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.phieudatphong_dg.BackgroundColor = System.Drawing.SystemColors.Control;
             this.phieudatphong_dg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieudatphong_dg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieudatphong_dg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.phieudatphong_dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.phieudatphong_dg.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MAPHONG,
-            this.CMND,
-            this.NGAYDEN,
-            this.SODEMLUUTRU,
-            this.YEUCAUDACBIET,
-            this.GIA});
             this.phieudatphong_dg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.phieudatphong_dg.Location = new System.Drawing.Point(0, 0);
             this.phieudatphong_dg.Name = "phieudatphong_dg";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieudatphong_dg.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieudatphong_dg.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.phieudatphong_dg.RowHeadersVisible = false;
             this.phieudatphong_dg.RowHeadersWidth = 51;
             this.phieudatphong_dg.Size = new System.Drawing.Size(952, 214);
             this.phieudatphong_dg.TabIndex = 21;
-            // 
-            // MAPHONG
-            // 
-            this.MAPHONG.HeaderText = "MAPHONG";
-            this.MAPHONG.MinimumWidth = 6;
-            this.MAPHONG.Name = "MAPHONG";
-            // 
-            // CMND
-            // 
-            this.CMND.HeaderText = "CMND";
-            this.CMND.MinimumWidth = 6;
-            this.CMND.Name = "CMND";
-            // 
-            // NGAYDEN
-            // 
-            this.NGAYDEN.HeaderText = "NGAYDEN";
-            this.NGAYDEN.MinimumWidth = 6;
-            this.NGAYDEN.Name = "NGAYDEN";
-            // 
-            // SODEMLUUTRU
-            // 
-            this.SODEMLUUTRU.HeaderText = "SODEMLUUTRU";
-            this.SODEMLUUTRU.MinimumWidth = 6;
-            this.SODEMLUUTRU.Name = "SODEMLUUTRU";
-            // 
-            // YEUCAUDACBIET
-            // 
-            this.YEUCAUDACBIET.HeaderText = "YEUCAUDATBIET";
-            this.YEUCAUDACBIET.MinimumWidth = 6;
-            this.YEUCAUDACBIET.Name = "YEUCAUDACBIET";
-            // 
-            // GIA
-            // 
-            this.GIA.HeaderText = "GIA";
-            this.GIA.Name = "GIA";
             // 
             // comboBox2
             // 
@@ -404,12 +357,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CMND;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYDEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SODEMLUUTRU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn YEUCAUDACBIET;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GIA;
         private System.Windows.Forms.Label label6;
     }
 }
