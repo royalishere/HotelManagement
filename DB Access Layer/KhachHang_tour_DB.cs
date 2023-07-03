@@ -12,14 +12,8 @@ namespace HotelManagement.DB_Access_Layer
         public static bool Them(SqlConnection conn, string CMND, int MaTour)
         {
             SqlDataAdapter dap = new SqlDataAdapter();
-            dap.SelectCommand = new SqlCommand();
-
-            //query truy vấn
             string sql = "insert into KhachHangTheoTour (MaTour, CMND) values (" + MaTour + ",'" + CMND + "')";
-
-            //Kết nối cơ sở dữ liệu
-            dap.SelectCommand.Connection = conn;
-            dap.SelectCommand.CommandText = sql;
+            dap.SelectCommand = new SqlCommand(sql, Login.conn);
 
             int i = dap.SelectCommand.ExecuteNonQuery();
 
@@ -27,7 +21,6 @@ namespace HotelManagement.DB_Access_Layer
             {
                 return true;
             }
-
             return false;
         }
     }

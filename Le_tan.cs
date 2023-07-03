@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class Le_tan_main_form : Form
+    public partial class Le_tan : Form
     {
-        public Le_tan_main_form()
+        public Le_tan()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace HotelManagement
 
         private void bt_ThongTinPhong_Click(object sender, EventArgs e)
         {
-            uc_ThongTinDatPhong uc = new uc_ThongTinDatPhong();
+            uc_ThongTinPhong uc = new uc_ThongTinPhong();
             addUserControl((uc));
         }
 

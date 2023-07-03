@@ -51,6 +51,7 @@
     <Compile Include="DB Access Layer\KhachHang_DB.cs" />
     <Compile Include="DB Access Layer\KhachHang_tour_DB.cs" />
     <Compile Include="DB Access Layer\LienPhieuSuDungDichVu_DB.cs" />
+    <Compile Include="DB Access Layer\NhanVien_DB.cs" />
     <Compile Include="DB Access Layer\PhieuDatPhong_DB.cs" />
     <Compile Include="DB Access Layer\Phong_DB.cs" />
     <Compile Include="DB Access Layer\Tour_DB.cs" />
@@ -60,11 +61,11 @@
     <Compile Include="Ke_toan.Designer.cs">
       <DependentUpon>Ke_toan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Le_tan_main_form.cs">
+    <Compile Include="Le_tan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Le_tan_main_form.Designer.cs">
-      <DependentUpon>Le_tan_main_form.cs</DependentUpon>
+    <Compile Include="Le_tan.Designer.cs">
+      <DependentUpon>Le_tan.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
@@ -74,12 +75,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Login\Quen_MK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login\Quen_MK.Designer.cs">
-      <DependentUpon>Quen_MK.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_DangKyDichVu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,20 +105,21 @@
     <Compile Include="UC_ThanhToan.Designer.cs">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="uc_ThongTinDatPhong.cs">
+    <Compile Include="uc_ThongTinPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc_ThongTinDatPhong.Designer.cs">
-      <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
+    <Compile Include="uc_ThongTinPhong.Designer.cs">
+      <DependentUpon>uc_ThongTinPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="UseCase Layer\HoaDon.cs" />
     <Compile Include="UseCase Layer\LienPhieuSuDungDichVu.cs" />
+    <Compile Include="UseCase Layer\NhanVien.cs" />
     <Compile Include="UseCase Layer\PhieuDatPhong.cs" />
     <EmbeddedResource Include="Ke_toan.resx">
       <DependentUpon>Ke_toan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Le_tan_main_form.resx">
-      <DependentUpon>Le_tan_main_form.cs</DependentUpon>
+    <EmbeddedResource Include="Le_tan.resx">
+      <DependentUpon>Le_tan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -138,9 +134,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Login\Quen_MK.resx">
-      <DependentUpon>Quen_MK.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UC_DangKyDichVu.resx">
       <DependentUpon>UC_DangKyDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,8 +149,8 @@
     <EmbeddedResource Include="UC_ThanhToan.resx">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc_ThongTinDatPhong.resx">
-      <DependentUpon>uc_ThongTinDatPhong.cs</DependentUpon>
+    <EmbeddedResource Include="uc_ThongTinPhong.resx">
+      <DependentUpon>uc_ThongTinPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -17,9 +17,5 @@ namespace HotelManagement
             InitializeComponent();
         }
 
-        private void UC_PhieuDatPhong_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

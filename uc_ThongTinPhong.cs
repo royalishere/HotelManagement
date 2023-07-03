@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelManagement
 {
-    public partial class uc_ThongTinDatPhong : UserControl
+    public partial class uc_ThongTinPhong : UserControl
     {
-        public uc_ThongTinDatPhong()
+        public uc_ThongTinPhong()
         {
             InitializeComponent();
         }
