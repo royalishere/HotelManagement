@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,7 +36,7 @@ namespace HotelManagement.DB_Access_Layer
 
         public static int LayGia(SqlConnection conn, int MaPhieu, int PDP)
         {
-
+            return 0; // tam thoi
         }
     }
 }

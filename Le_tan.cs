@@ -5,13 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace HotelManagement
 {
     public partial class Le_tan : Form
     {
+        Thread t;
         public Le_tan()
         {
             InitializeComponent();
@@ -24,8 +25,6 @@ namespace HotelManagement
         private void addUserControl(UserControl UC)
         {
             UC.Dock = DockStyle.Fill;
-            panelContainer.Controls.Clear();
-            panelContainer.Controls.Add(UC);
             UC.BringToFront();
         }
 
@@ -63,6 +62,14 @@ namespace HotelManagement
         {
             UC_ThanhToan uc = new UC_ThanhToan();
             addUserControl((uc));
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            t = new Thread(() => Application.Run(new Login()));
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
         }
     }
 }

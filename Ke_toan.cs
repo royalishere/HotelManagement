@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,14 +13,18 @@ namespace HotelManagement
 {
     public partial class Ke_toan : Form
     {
+        Thread t;
         public Ke_toan()
         {
             InitializeComponent();
         }
 
-        private void Ke_toan_Load(object sender, EventArgs e)
+        private void logout_btn_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            t = new Thread(() => Application.Run(new Login()));
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
         }
     }
 }

@@ -49,7 +49,7 @@ namespace HotelManagement
                     return;
                 }
                 this.Close();
-                t.SetApartmentState(System.Threading.ApartmentState.STA);
+                t.SetApartmentState(ApartmentState.STA);
                 t.Start();
             }
         }
