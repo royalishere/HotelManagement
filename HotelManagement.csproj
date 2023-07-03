@@ -55,16 +55,16 @@
     <Compile Include="DB Access Layer\PhieuDatPhong_DB.cs" />
     <Compile Include="DB Access Layer\Phong_DB.cs" />
     <Compile Include="DB Access Layer\Tour_DB.cs" />
-    <Compile Include="Ke_toan.cs">
+    <Compile Include="GUI\Ke_toan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ke_toan.Designer.cs">
+    <Compile Include="GUI\Ke_toan.Designer.cs">
       <DependentUpon>Ke_toan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Le_tan.cs">
+    <Compile Include="GUI\Le_tan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Le_tan.Designer.cs">
+    <Compile Include="GUI\Le_tan.Designer.cs">
       <DependentUpon>Le_tan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.cs">
@@ -75,50 +75,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC_DangKyDichVu.cs">
+    <Compile Include="GUI\UC_DangKyDichVu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_DangKyDichVu.Designer.cs">
+    <Compile Include="GUI\UC_DangKyDichVu.Designer.cs">
       <DependentUpon>UC_DangKyDichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_DangKyTour.cs">
+    <Compile Include="GUI\UC_DangKyTour.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_DangKyTour.Designer.cs">
+    <Compile Include="GUI\UC_DangKyTour.Designer.cs">
       <DependentUpon>UC_DangKyTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_PhieuDatPhong.cs">
+    <Compile Include="GUI\UC_PhieuDatPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_PhieuDatPhong.Designer.cs">
+    <Compile Include="GUI\UC_PhieuDatPhong.Designer.cs">
       <DependentUpon>UC_PhieuDatPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="uc_special_orders.cs">
+    <Compile Include="GUI\uc_special_orders.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc_special_orders.Designer.cs">
+    <Compile Include="GUI\uc_special_orders.Designer.cs">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ThanhToan.cs">
+    <Compile Include="GUI\UC_ThanhToan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ThanhToan.Designer.cs">
+    <Compile Include="GUI\UC_ThanhToan.Designer.cs">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="uc_ThongTinPhong.cs">
+    <Compile Include="GUI\uc_ThongTinPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="uc_ThongTinPhong.Designer.cs">
+    <Compile Include="GUI\uc_ThongTinPhong.Designer.cs">
       <DependentUpon>uc_ThongTinPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="UseCase Layer\HoaDon.cs" />
-    <Compile Include="UseCase Layer\LienPhieuSuDungDichVu.cs" />
-    <Compile Include="UseCase Layer\NhanVien.cs" />
-    <Compile Include="UseCase Layer\PhieuDatPhong.cs" />
-    <EmbeddedResource Include="Ke_toan.resx">
+    <Compile Include="Business Layer\HoaDon.cs" />
+    <Compile Include="Business Layer\LienPhieuSuDungDichVu.cs" />
+    <Compile Include="Business Layer\NhanVien.cs" />
+    <Compile Include="Business Layer\PhieuDatPhong.cs" />
+    <EmbeddedResource Include="GUI\Ke_toan.resx">
       <DependentUpon>Ke_toan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Le_tan.resx">
+    <EmbeddedResource Include="GUI\Le_tan.resx">
       <DependentUpon>Le_tan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
@@ -134,22 +134,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UC_DangKyDichVu.resx">
+    <EmbeddedResource Include="GUI\UC_DangKyDichVu.resx">
       <DependentUpon>UC_DangKyDichVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_DangKyTour.resx">
+    <EmbeddedResource Include="GUI\UC_DangKyTour.resx">
       <DependentUpon>UC_DangKyTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_PhieuDatPhong.resx">
+    <EmbeddedResource Include="GUI\UC_PhieuDatPhong.resx">
       <DependentUpon>UC_PhieuDatPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc_special_orders.resx">
+    <EmbeddedResource Include="GUI\uc_special_orders.resx">
       <DependentUpon>uc_special_orders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ThanhToan.resx">
+    <EmbeddedResource Include="GUI\UC_ThanhToan.resx">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc_ThongTinPhong.resx">
+    <EmbeddedResource Include="GUI\uc_ThongTinPhong.resx">
       <DependentUpon>uc_ThongTinPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
