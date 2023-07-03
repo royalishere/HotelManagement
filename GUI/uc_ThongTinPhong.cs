@@ -16,5 +16,10 @@ namespace HotelManagement
         {
             InitializeComponent();
         }
+
+        private void uc_ThongTinPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

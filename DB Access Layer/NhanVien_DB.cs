@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Sql;
 using System.Data.SqlClient;
-using HotelManagement.UseCase_Layer;
+using HotelManagement.Bussiness_Layer;
 
 namespace HotelManagement.DB_Access_Layer
 {

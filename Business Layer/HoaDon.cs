@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelManagement.UseCase_Layer
+namespace HotelManagement.Bussiness_Layer
 {
     internal class HoaDon
     {

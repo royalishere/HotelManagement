@@ -1,4 +1,4 @@
-﻿using HotelManagement.UseCase_Layer;
+﻿using HotelManagement.Bussiness_Layer;
 using System;
 using System.Collections.Generic;
 using System.Data;

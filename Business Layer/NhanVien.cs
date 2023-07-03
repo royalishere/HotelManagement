@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HotelManagement.DB_Access_Layer;
 
-namespace HotelManagement.UseCase_Layer
+namespace HotelManagement.Bussiness_Layer
 {
     internal class NhanVien
     {

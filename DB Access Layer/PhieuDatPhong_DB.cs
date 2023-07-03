@@ -1,4 +1,4 @@
-﻿using HotelManagement.UseCase_Layer;
+﻿using HotelManagement.Bussiness_Layer;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Deployment.Application;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HotelManagement.DB_Access_Layer
 {
@@ -93,6 +94,24 @@ namespace HotelManagement.DB_Access_Layer
             dap.Fill(table);
 
             return table.Rows[0].Field<DateTime>(0);
+        }
+
+        public static DataTable LoadPhieuDatPhong()
+        {
+            string sql = "select * from PhieuDatPhong";
+            DataTable table = new DataTable();
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            try
+            {
+                table.Load(reader);
+                return table;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
         }
     }
 }

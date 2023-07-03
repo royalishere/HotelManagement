@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +46,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.bt_dkDV);
             this.panel1.Controls.Add(this.bt_YCDB);
             this.panel1.Controls.Add(this.bt_ttPhong);
@@ -55,13 +58,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(176, 630);
+            this.panel1.Size = new System.Drawing.Size(176, 729);
             this.panel1.TabIndex = 0;
             // 
             // bt_dkDV
             // 
             this.bt_dkDV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_dkDV.ForeColor = System.Drawing.Color.Red;
+            this.bt_dkDV.ForeColor = System.Drawing.Color.DarkCyan;
             this.bt_dkDV.Location = new System.Drawing.Point(0, 343);
             this.bt_dkDV.Name = "bt_dkDV";
             this.bt_dkDV.Size = new System.Drawing.Size(176, 56);
@@ -73,19 +76,19 @@
             // bt_YCDB
             // 
             this.bt_YCDB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_YCDB.ForeColor = System.Drawing.Color.Red;
+            this.bt_YCDB.ForeColor = System.Drawing.Color.DarkCyan;
             this.bt_YCDB.Location = new System.Drawing.Point(0, 399);
             this.bt_YCDB.Name = "bt_YCDB";
             this.bt_YCDB.Size = new System.Drawing.Size(176, 56);
             this.bt_YCDB.TabIndex = 71;
-            this.bt_YCDB.Text = "Yêu cầu đặc biệt";
+            this.bt_YCDB.Text = "Đặt phòng";
             this.bt_YCDB.UseVisualStyleBackColor = true;
             this.bt_YCDB.Click += new System.EventHandler(this.bt_YCDB_Click);
             // 
             // bt_ttPhong
             // 
             this.bt_ttPhong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_ttPhong.ForeColor = System.Drawing.Color.Red;
+            this.bt_ttPhong.ForeColor = System.Drawing.Color.DarkCyan;
             this.bt_ttPhong.Location = new System.Drawing.Point(0, 455);
             this.bt_ttPhong.Name = "bt_ttPhong";
             this.bt_ttPhong.Size = new System.Drawing.Size(176, 56);
@@ -97,7 +100,7 @@
             // bt_dkTour
             // 
             this.bt_dkTour.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_dkTour.ForeColor = System.Drawing.Color.Red;
+            this.bt_dkTour.ForeColor = System.Drawing.Color.DarkCyan;
             this.bt_dkTour.Location = new System.Drawing.Point(0, 287);
             this.bt_dkTour.Name = "bt_dkTour";
             this.bt_dkTour.Size = new System.Drawing.Size(176, 56);
@@ -124,7 +127,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(48, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 26);
+            this.label1.Size = new System.Drawing.Size(80, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "LỄ TÂN";
             // 
@@ -146,24 +149,36 @@
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label3.Location = new System.Drawing.Point(323, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(455, 45);
+            this.label3.Size = new System.Drawing.Size(363, 36);
             this.label3.TabIndex = 67;
             this.label3.Text = "QUẢN LÝ KHÁCH SẠN";
             // 
             // ControlPanel
             // 
-            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ControlPanel.Location = new System.Drawing.Point(173, 0);
+            this.ControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ControlPanel.Location = new System.Drawing.Point(176, 0);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(1009, 630);
+            this.ControlPanel.Size = new System.Drawing.Size(1174, 729);
             this.ControlPanel.TabIndex = 68;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.button1.Location = new System.Drawing.Point(0, 512);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 56);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Trả phòng";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Le_tan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1182, 630);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
@@ -173,7 +188,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Le_tan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách sạn - LỄ TÂN";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Le_tan_main_form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -195,5 +212,6 @@
         private System.Windows.Forms.Button bt_dkDV;
         private System.Windows.Forms.Button bt_YCDB;
         private System.Windows.Forms.Button bt_ttPhong;
+        private System.Windows.Forms.Button button1;
     }
 }
