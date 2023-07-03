@@ -32,5 +32,10 @@ namespace HotelManagement.DB_Access_Layer
 
             return false;
         }
+
+        public static int LayGia(SqlConnection conn, int MaPhieu, int PDP)
+        {
+
+        }
     }
 }

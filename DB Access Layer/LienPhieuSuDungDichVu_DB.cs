@@ -49,5 +49,28 @@ namespace HotelManagement.DB_Access_Layer
 
             return false;
         }
+
+        public static int LayGia(SqlConnection conn, int MaPhieu)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter();
+            dap.SelectCommand = new SqlCommand();
+
+            //query truy vấn
+            string sql = "select * from LienPhieuSuDungDichVu where MaPhieu=" + MaPhieu;
+
+            //Kết nối cơ sở dữ liệu
+            dap.SelectCommand.Connection = conn;
+            dap.SelectCommand.CommandText = sql;
+
+            DataTable table = new DataTable();
+            dap.Fill(table);
+
+            if(table.Rows.Count == 0)
+            {
+                return 0;
+            }
+            
+            return table.Rows[0].Field<int>(0);
+        }
     }
 }

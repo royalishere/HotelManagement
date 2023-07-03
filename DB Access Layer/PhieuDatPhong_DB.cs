@@ -76,5 +76,23 @@ namespace HotelManagement.DB_Access_Layer
 
             return false;
         }
+
+        public static DateTime LayNgay(SqlConnection conn, string CMND, int MaPhong)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter();
+            dap.SelectCommand = new SqlCommand();
+
+            //query truy vấn
+            string sql = "select * from PhieuDatPhong where MaPhong=" + MaPhong + " and CMND='" + CMND + "'";
+
+            //Kết nối cơ sở dữ liệu
+            dap.SelectCommand.Connection = conn;
+            dap.SelectCommand.CommandText = sql;
+
+            DataTable table = new DataTable();
+            dap.Fill(table);
+
+            return table.Rows[0].Field<DateTime>(0);
+        }
     }
 }
