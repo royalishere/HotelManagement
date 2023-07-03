@@ -12,19 +12,25 @@ namespace HotelManagement.DB_Access_Layer
 {
     internal class LienPhieuSuDungDichVu_DB
     {
-        public static bool Them(SqlConnection conn, LienPhieuSuDungDichVu lp)
+        public static bool Them(SqlConnection conn, string CMND, int MaPhong, int MaDV, int SoLuong, int Gia)
         {
             SqlDataAdapter dap = new SqlDataAdapter();
             dap.SelectCommand = new SqlCommand();
 
             //query truy vấn
-            string sql = "insert into LienPhieuSuDungDichVu values ("+lp.MaPhieu+", "+lp.CMND+", "+lp.MaPhong+", "+lp.MaDV+", "+lp.SoLuong+", "+lp.Gia+")";
+            string sql = "insert into LienPhieuSuDungDichVu (CMND, MaPhong, MaDichVu, SoLuong, Gia) values (" + CMND+", "+MaPhong+", "+MaDV+", "+SoLuong+", "+Gia+")";
 
             //Kết nối cơ sở dữ liệu
             dap.SelectCommand.Connection = conn;
             dap.SelectCommand.CommandText = sql;
 
-            return true;
+            int i = dap.SelectCommand.ExecuteNonQuery();
+
+            if (i > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public static bool KTton_tai(SqlConnection conn, int MaPhieu)

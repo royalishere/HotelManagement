@@ -41,9 +41,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbb_DV = new System.Windows.Forms.ComboBox();
-            this.tb_Phong = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_phong = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSdichvu)).BeginInit();
             this.SuspendLayout();
@@ -132,6 +132,7 @@
             this.bt_DKdichvu.TabIndex = 11;
             this.bt_DKdichvu.Text = "Đăng ký";
             this.bt_DKdichvu.UseVisualStyleBackColor = false;
+            this.bt_DKdichvu.Click += new System.EventHandler(this.bt_DKdichvu_Click);
             // 
             // label4
             // 
@@ -185,15 +186,6 @@
             this.cbb_DV.Size = new System.Drawing.Size(232, 25);
             this.cbb_DV.TabIndex = 40;
             // 
-            // tb_Phong
-            // 
-            this.tb_Phong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tb_Phong.FormattingEnabled = true;
-            this.tb_Phong.Location = new System.Drawing.Point(223, 149);
-            this.tb_Phong.Name = "tb_Phong";
-            this.tb_Phong.Size = new System.Drawing.Size(232, 25);
-            this.tb_Phong.TabIndex = 41;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -214,13 +206,22 @@
             this.textBox3.Size = new System.Drawing.Size(234, 24);
             this.textBox3.TabIndex = 43;
             // 
+            // tb_phong
+            // 
+            this.tb_phong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_phong.Location = new System.Drawing.Point(297, 178);
+            this.tb_phong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_phong.Name = "tb_phong";
+            this.tb_phong.Size = new System.Drawing.Size(308, 28);
+            this.tb_phong.TabIndex = 45;
+            // 
             // UC_DangKyDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tb_phong);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.tb_Phong);
             this.Controls.Add(this.cbb_DV);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_soluong);
@@ -259,8 +260,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbb_DV;
-        private System.Windows.Forms.ComboBox tb_Phong;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_phong;
     }
 }
