@@ -11,13 +11,13 @@ namespace HotelManagement.DB_Access_Layer
     internal class Tour_DB
     {
 
-        public static DataTable LayDSTour(SqlConnection conn, string DiaDiem, int DVLH)
+        public static DataTable LayDSTour(SqlConnection conn)
         {
             SqlDataAdapter dap = new SqlDataAdapter();
             dap.SelectCommand = new SqlCommand();
 
             //query truy vấn
-            string sql = "select MaTour from TourDuLich where DiaDiem = '" + DiaDiem + "' and MaDonVi = " + DVLH + "";
+            string sql = "select * from TourDuLich";
 
             //Kết nối cơ sở dữ liệu
             dap.SelectCommand.Connection = conn;

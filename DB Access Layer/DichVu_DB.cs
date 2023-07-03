@@ -10,7 +10,7 @@ namespace HotelManagement.DB_Access_Layer
 {
     internal class DichVu_DB
     {
-        public static DataTable LayMaDV(SqlConnection conn)
+        public static DataTable LaDSDichVu(SqlConnection conn)
         {
             SqlDataAdapter dap = new SqlDataAdapter();
             dap.SelectCommand = new SqlCommand();

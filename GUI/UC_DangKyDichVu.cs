@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManagement.Business_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,5 +22,16 @@ namespace HotelManagement
         {
 
         }
+
+        private void UC_DangKyDichVu_Load(object sender, EventArgs e)
+        {
+            DataTable dt = DichVu.LayDSDichVu();
+            dgv_DSdichvu.DataSource = dt;
+
+            cbb_DV.DataSource = dt;
+            cbb_DV.DisplayMember = "MaSPDV";
+        }
+
+
     }
 }

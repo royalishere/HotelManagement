@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business Layer\DichVu.cs" />
+    <Compile Include="Business Layer\KhachHang_Tour.cs" />
+    <Compile Include="Business Layer\Tour.cs" />
     <Compile Include="DB Access Layer\DichVu_DB.cs" />
     <Compile Include="DB Access Layer\HoaDon_DB.cs" />
     <Compile Include="DB Access Layer\KhachHang_DB.cs" />
