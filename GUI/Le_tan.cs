@@ -51,7 +51,7 @@ namespace HotelManagement
 
         private void bt_YCDB_Click(object sender, EventArgs e)
         {
-            UC_PhieuDatPhong uc = UC_PhieuDatPhong.getInstance();
+            UC_PhieuDatPhong uc = new UC_PhieuDatPhong();
             addUserControl(uc);
         }
 

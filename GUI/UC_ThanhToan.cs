@@ -30,9 +30,11 @@ namespace HotelManagement
         {
             try
             {
+                gia_tb.Text = PhieuDatPhong.LayGia(cmnd_tb.Text, int.Parse(maphg_cb.Text)).ToString();
                 maphieu_cb.DataSource = LienPhieuSuDungDichVu.Phieu_CMND(cmnd_tb.Text, int.Parse(maphg_cb.Text));
                 maphieu_cb.DisplayMember = "MaPhieu";
                 maphieu_cb.Text = "";
+
             }
             catch
             {
@@ -42,21 +44,32 @@ namespace HotelManagement
 
         private void maphieu_cb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int gia_datphg;
+            int gia_dv;
             try
             {
-                int gia_datphg = PhieuDatPhong.LayGia(cmnd_tb.Text, int.Parse(maphg_cb.Text));
-                int gia_dv = LienPhieuSuDungDichVu.LayGia(Login.conn, int.Parse(maphieu_cb.Text));
-                gia_tb.Text = (gia_datphg + gia_dv).ToString();
+                gia_datphg = PhieuDatPhong.LayGia(cmnd_tb.Text, int.Parse(maphg_cb.Text));
+                gia_dv = LienPhieuSuDungDichVu.LayGia(Login.conn, int.Parse(maphieu_cb.Text));
             }
             catch
             {
-                gia_tb.Text = "0";
+                gia_datphg = 0;
+                gia_dv = 0;
             }
+            gia_tb.Text = (gia_datphg + gia_dv).ToString();
         }
 
         private void insert_btn_Click(object sender, EventArgs e)
         {
-            HoaDon hd = new HoaDon(0, int.Parse(maphg_cb.Text), cmnd_tb.Text, int.Parse(maphieu_cb.Text), int.Parse(gia_tb.Text));
+            HoaDon hd;
+            if(maphieu_cb.Text != "")
+            {
+                hd = new HoaDon(0, int.Parse(maphg_cb.Text), cmnd_tb.Text, int.Parse(maphieu_cb.Text), int.Parse(gia_tb.Text));
+            }
+            else
+            {
+                hd = new HoaDon(0, int.Parse(maphg_cb.Text), cmnd_tb.Text, 0, int.Parse(gia_tb.Text));
+            }
             if (HoaDon.Them(Login.conn, hd))
             {
                 MessageBox.Show("Thanh toan thanh cong");

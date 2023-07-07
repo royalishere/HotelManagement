@@ -16,9 +16,16 @@ namespace HotelManagement.DB_Access_Layer
         {
             SqlDataAdapter dap = new SqlDataAdapter();
             dap.SelectCommand = new SqlCommand();
-
+            string sql;
+            if(hd.MaPhieu != 0)
+            {
+                sql = "insert into HoaDon values(" + hd.MaPhong + ", '" + hd.CMND + "', " + hd.MaPhieu + ", " + hd.TongGia + ")";
+            }
+            else
+            {
+                sql = "insert into HoaDon values(" + hd.MaPhong + ", '" + hd.CMND + "', null, " + hd.TongGia + ")";
+            }
             //query truy vấn
-            string sql = "insert into HoaDon values(" + hd.MaPhong + ", '" + hd.CMND + "', " + hd.MaPhieu + ", " + hd.TongGia + ")";
 
             //Kết nối cơ sở dữ liệu
             dap.SelectCommand.Connection = conn;
