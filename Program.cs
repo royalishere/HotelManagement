@@ -16,7 +16,6 @@ namespace HotelManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Le_tan_main_form());
             Application.Run(new Login());
         }
     }

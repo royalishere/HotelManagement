@@ -7,6 +7,7 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HotelManagement.DB_Access_Layer
 {
@@ -18,7 +19,8 @@ namespace HotelManagement.DB_Access_Layer
             dap.SelectCommand = new SqlCommand();
 
             //query truy vấn
-            string sql = "insert into LienPhieuSuDungDichVu (CMND, MaPhong, MaDichVu, SoLuong, Gia) values (" + CMND+", "+MaPhong+", "+MaDV+", "+SoLuong+", "+Gia+")";
+            string sql = "insert into LienPhieuSuDungDichVu (CMND, MaPhong, MaDichVu, SoLuong, Gia) values ('" + CMND+"', "+MaPhong+", "+MaDV+", "+SoLuong+", "+Gia+")";
+            MessageBox.Show(sql);
 
             //Kết nối cơ sở dữ liệu
             dap.SelectCommand.Connection = conn;
