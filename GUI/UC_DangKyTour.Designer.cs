@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.dgv_dsTour);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 293);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(838, 214);
             this.panel1.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.dgv_dsTour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_dsTour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_dsTour.Location = new System.Drawing.Point(0, 0);
-            this.dgv_dsTour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_dsTour.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_dsTour.Name = "dgv_dsTour";
             this.dgv_dsTour.RowHeadersWidth = 51;
             this.dgv_dsTour.RowTemplate.Height = 24;
@@ -90,7 +90,7 @@
             this.bt_dkTour.BackColor = System.Drawing.Color.Lime;
             this.bt_dkTour.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_dkTour.Location = new System.Drawing.Point(166, 219);
-            this.bt_dkTour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_dkTour.Margin = new System.Windows.Forms.Padding(2);
             this.bt_dkTour.Name = "bt_dkTour";
             this.bt_dkTour.Size = new System.Drawing.Size(107, 31);
             this.bt_dkTour.TabIndex = 42;
@@ -124,7 +124,7 @@
             // 
             this.tb_cmnd.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cmnd.Location = new System.Drawing.Point(104, 120);
-            this.tb_cmnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_cmnd.Margin = new System.Windows.Forms.Padding(2);
             this.tb_cmnd.Name = "tb_cmnd";
             this.tb_cmnd.Size = new System.Drawing.Size(155, 24);
             this.tb_cmnd.TabIndex = 36;
@@ -198,7 +198,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(678, 180);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(120, 24);
             this.textBox3.TabIndex = 53;
@@ -207,7 +207,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(678, 228);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(120, 24);
             this.textBox4.TabIndex = 55;
@@ -228,7 +228,7 @@
             this.cbb_tour.FormattingEnabled = true;
             this.cbb_tour.Location = new System.Drawing.Point(104, 178);
             this.cbb_tour.Name = "cbb_tour";
-            this.cbb_tour.Size = new System.Drawing.Size(127, 21);
+            this.cbb_tour.Size = new System.Drawing.Size(155, 21);
             this.cbb_tour.TabIndex = 56;
             this.cbb_tour.SelectedIndexChanged += new System.EventHandler(this.cbb_tour_SelectedIndexChanged);
             // 
@@ -253,7 +253,7 @@
             this.Controls.Add(this.tb_cmnd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_DangKyTour";
             this.Size = new System.Drawing.Size(838, 507);
             this.Load += new System.EventHandler(this.UC_DangKyTour_Load);

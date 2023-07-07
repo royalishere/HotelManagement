@@ -43,7 +43,7 @@
             this.cbb_DV = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tb_phong = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSdichvu)).BeginInit();
             this.SuspendLayout();
@@ -52,10 +52,10 @@
             // 
             this.panel1.Controls.Add(this.dgv_DSdichvu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 380);
+            this.panel1.Location = new System.Drawing.Point(0, 414);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(949, 181);
+            this.panel1.Size = new System.Drawing.Size(1174, 315);
             this.panel1.TabIndex = 0;
             // 
             // dgv_DSdichvu
@@ -63,29 +63,28 @@
             this.dgv_DSdichvu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DSdichvu.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_DSdichvu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DSdichvu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_DSdichvu.Location = new System.Drawing.Point(0, 0);
+            this.dgv_DSdichvu.Location = new System.Drawing.Point(15, 12);
             this.dgv_DSdichvu.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_DSdichvu.Name = "dgv_DSdichvu";
             this.dgv_DSdichvu.RowHeadersWidth = 51;
             this.dgv_DSdichvu.RowTemplate.Height = 24;
-            this.dgv_DSdichvu.Size = new System.Drawing.Size(949, 181);
+            this.dgv_DSdichvu.Size = new System.Drawing.Size(1144, 288);
             this.dgv_DSdichvu.TabIndex = 0;
             // 
             // tb_CMND
             // 
-            this.tb_CMND.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_CMND.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tb_CMND.Location = new System.Drawing.Point(223, 100);
             this.tb_CMND.Margin = new System.Windows.Forms.Padding(2);
             this.tb_CMND.Name = "tb_CMND";
-            this.tb_CMND.Size = new System.Drawing.Size(232, 24);
+            this.tb_CMND.Size = new System.Drawing.Size(232, 22);
             this.tb_CMND.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(147, 100);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(153, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 17);
@@ -95,8 +94,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 201);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(129, 203);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
@@ -115,8 +114,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(636, 74);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(635, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 17);
@@ -125,8 +124,10 @@
             // 
             // bt_DKdichvu
             // 
-            this.bt_DKdichvu.BackColor = System.Drawing.Color.Lime;
+            this.bt_DKdichvu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bt_DKdichvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_DKdichvu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_DKdichvu.ForeColor = System.Drawing.Color.DarkCyan;
             this.bt_DKdichvu.Location = new System.Drawing.Point(290, 297);
             this.bt_DKdichvu.Margin = new System.Windows.Forms.Padding(2);
             this.bt_DKdichvu.Name = "bt_DKdichvu";
@@ -149,18 +150,18 @@
             // 
             // tb_soluong
             // 
-            this.tb_soluong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_soluong.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tb_soluong.Location = new System.Drawing.Point(223, 251);
             this.tb_soluong.Margin = new System.Windows.Forms.Padding(2);
             this.tb_soluong.Name = "tb_soluong";
-            this.tb_soluong.Size = new System.Drawing.Size(234, 24);
+            this.tb_soluong.Size = new System.Drawing.Size(234, 22);
             this.tb_soluong.TabIndex = 38;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(128, 151);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(134, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 17);
@@ -170,8 +171,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 254);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.Location = new System.Drawing.Point(74, 256);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 17);
@@ -181,11 +182,11 @@
             // 
             // cbb_DV
             // 
-            this.cbb_DV.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbb_DV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbb_DV.FormattingEnabled = true;
             this.cbb_DV.Location = new System.Drawing.Point(223, 201);
             this.cbb_DV.Name = "cbb_DV";
-            this.cbb_DV.Size = new System.Drawing.Size(232, 25);
+            this.cbb_DV.Size = new System.Drawing.Size(232, 23);
             this.cbb_DV.TabIndex = 40;
             // 
             // label7
@@ -201,27 +202,27 @@
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBox3.Location = new System.Drawing.Point(562, 201);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 24);
+            this.textBox3.Size = new System.Drawing.Size(234, 22);
             this.textBox3.TabIndex = 43;
             // 
-            // tb_phong
+            // comboBox1
             // 
-            this.tb_phong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_phong.Location = new System.Drawing.Point(223, 149);
-            this.tb_phong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_phong.Name = "tb_phong";
-            this.tb_phong.Size = new System.Drawing.Size(234, 24);
-            this.tb_phong.TabIndex = 45;
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(223, 147);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(232, 23);
+            this.comboBox1.TabIndex = 45;
             // 
             // UC_DangKyDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tb_phong);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.cbb_DV);
@@ -238,7 +239,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_DangKyDichVu";
-            this.Size = new System.Drawing.Size(949, 561);
+            this.Size = new System.Drawing.Size(1174, 729);
             this.Load += new System.EventHandler(this.UC_DangKyDichVu_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSdichvu)).EndInit();
@@ -264,6 +265,6 @@
         private System.Windows.Forms.ComboBox cbb_DV;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox tb_phong;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

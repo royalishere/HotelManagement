@@ -77,6 +77,7 @@
             this.username_tb.Name = "username_tb";
             this.username_tb.Size = new System.Drawing.Size(153, 26);
             this.username_tb.TabIndex = 2;
+            this.username_tb.Text = "EMP823";
             // 
             // pass_tb
             // 
@@ -85,6 +86,7 @@
             this.pass_tb.Name = "pass_tb";
             this.pass_tb.Size = new System.Drawing.Size(153, 26);
             this.pass_tb.TabIndex = 3;
+            this.pass_tb.Text = "123456";
             // 
             // login_btn
             // 

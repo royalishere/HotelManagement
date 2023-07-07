@@ -30,8 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.giaphg_tb = new System.Windows.Forms.TextBox();
+            this.mota_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,12 +39,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ttphong_dg = new System.Windows.Forms.DataGridView();
+            this.maphg_tb = new System.Windows.Forms.TextBox();
+            this.loaiphg_tb = new System.Windows.Forms.TextBox();
+            this.tinhtrang_cb = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ttphong_dg)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -56,23 +56,26 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox4
+            // giaphg_tb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox4.Location = new System.Drawing.Point(311, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 22);
-            this.textBox4.TabIndex = 22;
+            this.giaphg_tb.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.giaphg_tb.Location = new System.Drawing.Point(311, 184);
+            this.giaphg_tb.Name = "giaphg_tb";
+            this.giaphg_tb.Size = new System.Drawing.Size(125, 22);
+            this.giaphg_tb.TabIndex = 22;
+            this.giaphg_tb.Text = "0";
             // 
-            // textBox3
+            // mota_tb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(598, 102);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 59);
-            this.textBox3.TabIndex = 21;
+            this.mota_tb.Enabled = false;
+            this.mota_tb.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.mota_tb.Location = new System.Drawing.Point(598, 102);
+            this.mota_tb.Multiline = true;
+            this.mota_tb.Name = "mota_tb";
+            this.mota_tb.Size = new System.Drawing.Size(149, 59);
+            this.mota_tb.TabIndex = 21;
             // 
             // label2
             // 
@@ -137,19 +140,19 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.ttphong_dg);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 290);
+            this.panel1.Location = new System.Drawing.Point(0, 271);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 238);
+            this.panel1.Size = new System.Drawing.Size(972, 288);
             this.panel1.TabIndex = 24;
             // 
-            // dataGridView1
+            // ttphong_dg
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.ttphong_dg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ttphong_dg.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.ttphong_dg.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -157,51 +160,57 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(972, 238);
-            this.dataGridView1.TabIndex = 1;
+            this.ttphong_dg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.ttphong_dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ttphong_dg.Location = new System.Drawing.Point(14, 14);
+            this.ttphong_dg.Name = "ttphong_dg";
+            this.ttphong_dg.RowHeadersVisible = false;
+            this.ttphong_dg.RowHeadersWidth = 51;
+            this.ttphong_dg.Size = new System.Drawing.Size(944, 256);
+            this.ttphong_dg.TabIndex = 1;
+            this.ttphong_dg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ttphong_dg_CellClick);
             // 
-            // textBox1
+            // maphg_tb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(311, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
-            this.textBox1.TabIndex = 18;
+            this.maphg_tb.Enabled = false;
+            this.maphg_tb.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.maphg_tb.Location = new System.Drawing.Point(311, 102);
+            this.maphg_tb.Name = "maphg_tb";
+            this.maphg_tb.Size = new System.Drawing.Size(125, 22);
+            this.maphg_tb.TabIndex = 18;
             // 
-            // textBox5
+            // loaiphg_tb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox5.Location = new System.Drawing.Point(311, 146);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 22);
-            this.textBox5.TabIndex = 25;
+            this.loaiphg_tb.Enabled = false;
+            this.loaiphg_tb.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.loaiphg_tb.Location = new System.Drawing.Point(311, 146);
+            this.loaiphg_tb.Name = "loaiphg_tb";
+            this.loaiphg_tb.Size = new System.Drawing.Size(125, 22);
+            this.loaiphg_tb.TabIndex = 25;
             // 
-            // comboBox1
+            // tinhtrang_cb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(598, 185);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(149, 21);
-            this.comboBox1.TabIndex = 26;
+            this.tinhtrang_cb.FormattingEnabled = true;
+            this.tinhtrang_cb.Items.AddRange(new object[] {
+            "da dat",
+            "trong",
+            "tam ngung"});
+            this.tinhtrang_cb.Location = new System.Drawing.Point(598, 185);
+            this.tinhtrang_cb.Name = "tinhtrang_cb";
+            this.tinhtrang_cb.Size = new System.Drawing.Size(149, 21);
+            this.tinhtrang_cb.TabIndex = 26;
             // 
             // uc_ThongTinPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tinhtrang_cb);
+            this.Controls.Add(this.loaiphg_tb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.giaphg_tb);
+            this.Controls.Add(this.mota_tb);
+            this.Controls.Add(this.maphg_tb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -210,10 +219,10 @@
             this.Controls.Add(this.label6);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_ThongTinPhong";
-            this.Size = new System.Drawing.Size(972, 528);
+            this.Size = new System.Drawing.Size(972, 559);
             this.Load += new System.EventHandler(this.uc_ThongTinPhong_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ttphong_dg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,8 +231,8 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox giaphg_tb;
+        private System.Windows.Forms.TextBox mota_tb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
@@ -231,9 +240,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView ttphong_dg;
+        private System.Windows.Forms.TextBox maphg_tb;
+        private System.Windows.Forms.TextBox loaiphg_tb;
+        private System.Windows.Forms.ComboBox tinhtrang_cb;
     }
 }

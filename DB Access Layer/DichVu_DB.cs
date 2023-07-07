@@ -49,5 +49,6 @@ namespace HotelManagement.DB_Access_Layer
 
             return table.Rows[0].Field<int>(0);
         }
+
     }
 }

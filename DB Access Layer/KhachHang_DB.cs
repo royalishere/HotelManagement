@@ -5,26 +5,45 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using HotelManagement.Business_Layer;
+using HotelManagement.Bussiness_Layer;
 
 namespace HotelManagement.DB_Access_Layer
 {
     internal class KhachHang_DB
     {
-        public static DataTable Lay_CMND(SqlConnection conn) 
+        public static string[] Lay_CMND() 
         {
-            SqlDataAdapter dap = new SqlDataAdapter();
-            dap.SelectCommand = new SqlCommand();
-
             //query truy vấn
             string sql = "select * from KhachHang";
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            string[] CMND = new string[200];
+            int i = 0;
+            while (reader.Read())
+            {
+                CMND[i] = reader.GetString(0);
+                i++;
+            }
+            reader.Close();
+            return CMND;
+        }
 
-            //Kết nối cơ sở dữ liệu
-            dap.SelectCommand.Connection = conn;
-            dap.SelectCommand.CommandText = sql;
-
-            DataTable table = new DataTable();
-            dap.Fill(table);
-            return table;
+        public static bool Them(KhachHang k)
+        {
+            string sql = "insert into KhachHang values ('" + k.CMND + "', '" + k.TenKH + "', '" + k.SDT + "', '" + k.Email + "')";
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thành công. Kiểm tra chứng minh nhân dân");
+                return false;
+            }
         }
     }
 }

@@ -14,23 +14,17 @@ namespace HotelManagement.DB_Access_Layer
     {
         public static bool Them(SqlConnection conn, string CMND, int MaPhong, int MaDV, int SoLuong, int Gia)
         {
-            SqlDataAdapter dap = new SqlDataAdapter();
-            dap.SelectCommand = new SqlCommand();
-
-            //query truy vấn
-            string sql = "insert into LienPhieuSuDungDichVu (CMND, MaPhong, MaDichVu, SoLuong, Gia) values (" + CMND+", "+MaPhong+", "+MaDV+", "+SoLuong+", "+Gia+")";
-
-            //Kết nối cơ sở dữ liệu
-            dap.SelectCommand.Connection = conn;
-            dap.SelectCommand.CommandText = sql;
-
-            int i = dap.SelectCommand.ExecuteNonQuery();
-
-            if (i > 0)
+            string sql = "insert into LienPhieuSuDungDichVu (CMND, MaPhong, MaDichVu, SoLuong, Gia) values (" + CMND + ", " + MaPhong + ", " + MaDV + ", " + SoLuong + ", " + Gia + ")";
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            try
             {
+                cmd.ExecuteNonQuery();
                 return true;
             }
-            return false;
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public static bool KTton_tai(SqlConnection conn, int MaPhieu)

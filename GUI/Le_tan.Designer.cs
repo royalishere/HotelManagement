@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.bt_dkDV = new System.Windows.Forms.Button();
             this.bt_YCDB = new System.Windows.Forms.Button();
             this.bt_ttPhong = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ControlPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(176, 729);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.button1.Location = new System.Drawing.Point(0, 512);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 56);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Trả phòng";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // bt_dkDV
             // 
@@ -158,20 +169,10 @@
             this.ControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ControlPanel.Location = new System.Drawing.Point(176, 0);
+            this.ControlPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(1174, 729);
             this.ControlPanel.TabIndex = 68;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button1.Location = new System.Drawing.Point(0, 512);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 56);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "Trả phòng";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Le_tan
             // 
