@@ -16,7 +16,7 @@ namespace HotelManagement
     public partial class Login : Form
     {
         public static SqlConnection conn;
-        public string s_name = "HOANGGIA";// change this to your host name "DESKTOP-SDTBD0C"
+        public string s_name = "DESKTOP-SDTBD0C";// change this to your host name "DESKTOP-SDTBD0C"
         public string ins_name = "SQLEXPRESS"; 
         public string db_name = "QLKS";
         public static string u_role = "";
