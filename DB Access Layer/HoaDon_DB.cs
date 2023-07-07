@@ -18,7 +18,7 @@ namespace HotelManagement.DB_Access_Layer
             dap.SelectCommand = new SqlCommand();
 
             //query truy vấn
-            string sql = "insert into HoaDon values(" + hd.MaHoaDon + ", " + hd.MaPhong + ", '" + hd.CMND + "', " + hd.MaPhieu + ", " + hd.TongGia + ")";
+            string sql = "insert into HoaDon values(" + hd.MaPhong + ", '" + hd.CMND + "', " + hd.MaPhieu + ", " + hd.TongGia + ")";
 
             //Kết nối cơ sở dữ liệu
             dap.SelectCommand.Connection = conn;
@@ -32,11 +32,6 @@ namespace HotelManagement.DB_Access_Layer
             }
 
             return false;
-        }
-
-        public static int LayGia(SqlConnection conn, int MaPhieu, int PDP)
-        {
-            return 0; // tam thoi
         }
     }
 }

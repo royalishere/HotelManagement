@@ -30,7 +30,7 @@ namespace HotelManagement.DB_Access_Layer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }
@@ -45,7 +45,7 @@ namespace HotelManagement.DB_Access_Layer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch (Exception ex)
+            catch 
             {
                 return false;
             }
@@ -60,7 +60,7 @@ namespace HotelManagement.DB_Access_Layer
                 return (int)cmd.ExecuteScalar();
 
             }
-            catch (Exception ex)
+            catch
             {
                 return 0;
             }
@@ -77,7 +77,7 @@ namespace HotelManagement.DB_Access_Layer
                 dt.Load(reader);
                 return dt;
             }
-            catch (Exception ex)
+            catch 
             {
                 return null;
             }

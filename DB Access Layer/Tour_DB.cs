@@ -50,5 +50,29 @@ namespace HotelManagement.DB_Access_Layer
 
             return table.Rows[0].Field<int>(0);
         }
+
+        public static int LayMaDonVi(int MaDV)
+        {
+            string sql = "select MaDonVi from TourDuLich where MaTour = " + MaDV;
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            return (int)cmd.ExecuteScalar();
+        }
+
+        public static DataTable Tour_DiaDiem(string DiaDiem)
+        {
+            string sql = "select matour from TourDuLich where DiaDiem like '%" + DiaDiem + "%'";
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                dt.Load(reader);
+                return dt;
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }

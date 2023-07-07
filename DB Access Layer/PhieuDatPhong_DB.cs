@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Deployment.Application;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -62,6 +63,39 @@ namespace HotelManagement.DB_Access_Layer
             {
                 MessageBox.Show(ex.Message);
                 return null;
+            }
+        }
+
+        public static DataTable Phong_CMND(string cmnd)
+        {
+            string sql = "select maphong from PhieuDatPhong where cmnd = '" + cmnd + "'";
+            DataTable table = new DataTable();
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            try
+            {
+                table.Load(reader);
+                return table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public static int LayGia(string cmnd , int maphg)
+        {
+            string sql = "select Gia from PhieuDatPhong where cmnd = '" + cmnd + "' and maphong = " + maphg;
+            SqlCommand cmd = new SqlCommand(sql, Login.conn);
+            try
+            {
+                return (int)cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
             }
         }
     }

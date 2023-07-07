@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.traphg_btn = new System.Windows.Forms.Button();
             this.bt_dkDV = new System.Windows.Forms.Button();
             this.bt_YCDB = new System.Windows.Forms.Button();
             this.bt_ttPhong = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.traphg_btn);
             this.panel1.Controls.Add(this.bt_dkDV);
             this.panel1.Controls.Add(this.bt_YCDB);
             this.panel1.Controls.Add(this.bt_ttPhong);
@@ -61,16 +61,17 @@
             this.panel1.Size = new System.Drawing.Size(176, 729);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // traphg_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button1.Location = new System.Drawing.Point(0, 512);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 56);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "Trả phòng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.traphg_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.traphg_btn.ForeColor = System.Drawing.Color.DarkCyan;
+            this.traphg_btn.Location = new System.Drawing.Point(0, 512);
+            this.traphg_btn.Name = "traphg_btn";
+            this.traphg_btn.Size = new System.Drawing.Size(176, 56);
+            this.traphg_btn.TabIndex = 73;
+            this.traphg_btn.Text = "Trả phòng";
+            this.traphg_btn.UseVisualStyleBackColor = true;
+            this.traphg_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // bt_dkDV
             // 
@@ -213,6 +214,6 @@
         private System.Windows.Forms.Button bt_dkDV;
         private System.Windows.Forms.Button bt_YCDB;
         private System.Windows.Forms.Button bt_ttPhong;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button traphg_btn;
     }
 }

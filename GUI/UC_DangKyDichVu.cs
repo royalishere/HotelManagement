@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HotelManagement.Bussiness_Layer;
 
 namespace HotelManagement
 {
@@ -19,16 +20,10 @@ namespace HotelManagement
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void UC_DangKyDichVu_Load(object sender, EventArgs e)
         {
             DataTable dt = DichVu.LayDSDichVu();
             dgv_DSdichvu.DataSource = dt;
-
             cbb_DV.DataSource = dt;
             cbb_DV.DisplayMember = "MaSPDV";
         }
@@ -43,7 +38,7 @@ namespace HotelManagement
                 return;
 
             } 
-            else if (string.IsNullOrEmpty(tb_phong.Text))
+            else if (string.IsNullOrEmpty(phg_cb.Text))
             {
                 MessageBox.Show("Vui long nhap MaPhong");
                 return;
@@ -56,7 +51,7 @@ namespace HotelManagement
             }
 
             int MaDV = Int32.Parse(cbb_DV.Text);
-            int MaPhong = Int32.Parse(tb_phong.Text);
+            int MaPhong = Int32.Parse(phg_cb.Text);
             int gia = DichVu.LayGia(MaDV);
             sl = Int32.Parse(tb_soluong.Text);
             gia = gia * sl;
@@ -65,7 +60,31 @@ namespace HotelManagement
             {
                 MessageBox.Show("Dang ky thanh cong");
             }
+            else
+            {
+                MessageBox.Show("Dang ky that bai");
+            }
 
+        }
+
+        private void tb_CMND_Leave(object sender, EventArgs e)
+        {
+            phg_cb.DataSource = PhieuDatPhong.Phong_CMND(tb_CMND.Text);
+            phg_cb.DisplayMember = "MaPhong";
+            phg_cb.Text = "";
+        }
+
+        private void tb_soluong_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                int gia = DichVu.LayGia(Int32.Parse(cbb_DV.Text)) * Int32.Parse(tb_soluong.Text);
+                gia_tb.Text = gia.ToString();
+            }
+            catch
+            {
+                gia_tb.Text = "0";
+            }
         }
     }
 }

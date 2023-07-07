@@ -39,7 +39,7 @@ namespace HotelManagement.DB_Access_Layer
                 cmd.ExecuteNonQuery();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Không thành công. Kiểm tra chứng minh nhân dân");
                 return false;

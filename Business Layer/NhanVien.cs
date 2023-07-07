@@ -9,9 +9,9 @@ namespace HotelManagement.Bussiness_Layer
 {
     internal class NhanVien
     {
-        string MaNV;
-        string TenNV;
-        string LoaiNV;
+        string MaNV = "";
+        string TenNV = "";
+        string LoaiNV = "";
         DateTime NgaySinh;
 
         public static string LayLoaiNV()

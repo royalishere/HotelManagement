@@ -9,8 +9,8 @@ namespace HotelManagement.Business_Layer
 {
     internal class KhachHang_Tour
     {
-        public string CMND;
-        public int MaTour;
+        public string CMND = "";
+        public int MaTour = 0;
 
         public static bool Them(string CMND, int MaTour)
         {

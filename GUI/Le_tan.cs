@@ -60,5 +60,11 @@ namespace HotelManagement
             uc_ThongTinPhong uc = new uc_ThongTinPhong();
             addUserControl(uc);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UC_ThanhToan uc = new UC_ThanhToan();
+            addUserControl(uc);
+        }
     }
 }

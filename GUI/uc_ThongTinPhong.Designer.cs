@@ -162,11 +162,12 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ttphong_dg.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.ttphong_dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ttphong_dg.Location = new System.Drawing.Point(14, 14);
+            this.ttphong_dg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ttphong_dg.Location = new System.Drawing.Point(0, 0);
             this.ttphong_dg.Name = "ttphong_dg";
             this.ttphong_dg.RowHeadersVisible = false;
             this.ttphong_dg.RowHeadersWidth = 51;
-            this.ttphong_dg.Size = new System.Drawing.Size(944, 256);
+            this.ttphong_dg.Size = new System.Drawing.Size(972, 288);
             this.ttphong_dg.TabIndex = 1;
             this.ttphong_dg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ttphong_dg_CellClick);
             // 

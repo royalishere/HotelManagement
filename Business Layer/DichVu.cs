@@ -10,10 +10,10 @@ namespace HotelManagement.Business_Layer
 {
     internal class DichVu
     {
-        public int MaDV;
-        public string TenDichVu;
-        public string MoTa;
-        public int Gia;
+        public int MaDV = 0;
+        public string TenDichVu = "";
+        public string MoTa= "";
+        public int Gia = 0;
 
         public static DataTable LayDSDichVu()
         {

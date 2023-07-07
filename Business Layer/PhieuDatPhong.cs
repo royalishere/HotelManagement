@@ -43,5 +43,15 @@ namespace HotelManagement.Bussiness_Layer
         {
             return PhieuDatPhong_DB.LoadYCDB();
         }
+
+        public static DataTable Phong_CMND(string cmnd)
+        {
+            return PhieuDatPhong_DB.Phong_CMND(cmnd);
+        }
+
+        public static int LayGia(string cmnd, int maphg)
+        {
+            return PhieuDatPhong_DB.LayGia(cmnd, maphg);
+        }
     }
 }

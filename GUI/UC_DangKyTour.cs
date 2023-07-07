@@ -28,10 +28,6 @@ namespace HotelManagement
             cbb_tour.DisplayMember = "MaTour";
         }
 
-        private void cbb_tour_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void bt_dkTour_Click(object sender, EventArgs e)
         {
@@ -47,8 +43,29 @@ namespace HotelManagement
             {
                 MessageBox.Show("Dang ky thanh cong");
             }
-            else MessageBox.Show("Khong dang ky duoc");
+            else MessageBox.Show("Dang ky that bai");
 
+        }
+
+        private void tb_diaDiem_KeyUp(object sender, KeyEventArgs e)
+        {
+            cbb_tour.DataSource = Tour.Tour_DiaDiem(tb_diaDiem.Text);
+            cbb_tour.DisplayMember = "MaTour";
+            cbb_tour.Text = "";
+        }
+
+        private void cbb_tour_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                gia_tb.Text = Tour.LayGia(Login.conn, int.Parse(cbb_tour.Text)).ToString();
+                madv_tb.Text = Tour.LayMaDonVi(int.Parse(cbb_tour.Text)).ToString();
+            }
+            catch
+            {
+                gia_tb.Text = null;
+                madv_tb.Text = null;
+            }
         }
     }
 }
